@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+  .second {
+      color: blue;
+      width: 100%;
+      display: none;
+  }
+}

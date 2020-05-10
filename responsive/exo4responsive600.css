@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #ffffb3;
+  }
+
+  .first {
+      width: 100%;
+      flex-direction: column;
+
+  }
+
+  .second {
+     display: none;
+  }
+
+  .images {
+      width: 25%;
+      height: 25%;
+  }
+}

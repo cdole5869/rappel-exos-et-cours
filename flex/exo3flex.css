@@ -1,0 +1,14 @@
+.container {
+    background-color:  blue;
+    display:flex;
+    flex-direction: column;
+    width: 500px;
+    height: 150px;
+}
+
+.container>p {
+    background-color: grey;
+    width: 50px;
+    height: 20px;
+    text-align: center;
+}

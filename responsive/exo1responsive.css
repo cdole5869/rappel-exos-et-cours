@@ -1,0 +1,26 @@
+body {
+    background-color:  tan;
+    width: 500px;
+    height: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
+  }
+
+  section {
+      color: red;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+  section {
+      font-style: italic;
+      color: pink;
+  }
+}

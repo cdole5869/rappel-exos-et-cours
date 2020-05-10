@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: tan;
+    width: 100%;
+    height: 100px;
+}
+
+.second {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    text-align: center;
+}
+/* Ici, on utilise des dispositions qui vont s'appliquer aux colonnes et qui vont
+prendre la forme de la div à 50 % soit 2 colonnes ou 100 % soit 4 colones.
+Vois exo w3s school media queries.
+
+Dans l'onglet 600, lorque l'écran attentin cette taille en pixels, on a ajouté un display none
+(toutes les div sont concernées ici dans notre exemple) et va faire disparaître les div.*/
