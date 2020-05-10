@@ -1,0 +1,258 @@
+* {
+    margin :0;
+    padding :0;
+}
+
+body {
+    font-family: "Sniglet", cursive;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #1ca2f9;
+    display:flex;
+    align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+#voyage {
+    padding-left: 20px;
+}
+
+#aboutus {
+    padding-left: 1300px;
+}
+
+#sitientis {
+    padding-left: 20px;
+}
+
+#section1 {
+    width: 100%;
+    height: 683px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    background: linear-gradient(#0298f9,#99e6ff);
+    animation: weather 8s;
+}
+
+.fa-sun {
+    color: yellow;
+    position: relative;
+    animation: sunrise 8s;
+}
+
+.fa-cloud {
+    color: white;
+    bottom :20%;
+    position: relative;
+    animation: cloud 8s;
+}
+
+.fa-fly {
+    color: red;
+    bottom :40%;
+    right: 20%;
+    position: relative;
+    animation: fly 8s;
+}
+
+@keyframes sunrise {
+    0% {left: 20%}
+    25% {left: 50%}
+    50% {left: -20%}
+    75% {left: -30%}
+    100% {left: 50%}
+}
+
+@keyframes cloud {
+    0% {left: -20%}
+    25% {left: -50%}
+    50% {left: 20%}
+    75% {left: 30%}
+    100% {left: -50%}
+}
+
+@keyframes fly {
+    0% {bottom: -20%}
+    12% {left: -25%}
+    25% {left: -30%}
+    50% {left: 20%}
+    75% {left: 30%}
+    100% {left: -50%}
+}
+
+@keyframes weather {
+    0% {background: linear-gradient(#0298f9,#99e6ff);}
+    50% {background: linear-gradient(#0073e6,#3399ff);}
+    100% {background: linear-gradient(#003366,#0059b3);}
+}
+
+#section2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#section2>h3 {
+    color: black;
+}
+
+#section2>h2 {
+    color: #0298f9;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+#underline {
+    display: inline-block;
+    color: #0298f9;
+    border-bottom: 2px solid #0298f9;
+}
+
+#unam {
+    padding-top: 40px;
+}
+
+#image {
+    width: 490px;
+    height: 310px;
+    padding-top: 30px;
+    margin-right: 5px;
+}
+
+#section3 {
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    background: #0099cc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.round {
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+    color: #0298f9;
+    background : white;
+    text-align: center;
+    padding-top: 7px;
+}
+
+#section4 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+#section4>h3 {
+    color: black;
+}
+
+#section4>h2 {
+    color: #0298f9;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    width: 450px;
+    height: 180px;
+    background: linear-gradient(#0298f9, #70cbf4);
+    margin-top: 20px;
+    text-align: left;
+    color: white;
+}
+
+i {
+    padding: 20px;
+}
+
+#quisque{
+    margin-left: 66px;
+    padding-top: 20px;
+    white-space: pre-line;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    background: #e6e6e6;
+}
+
+#contacts {
+    margin-left: -100px;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+
+    header {
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 70px;
+        background-color: #1ca2f9;
+        align-items: center;
+    }
+
+    #section2 {
+        flex-direction: column;
+    }
+
+    #underline {
+        display: inline-block;
+        color: #0298f9;
+        border-bottom: 2px solid #0298f9;
+    }
+
+    #section3 {
+        flex-direction: column;
+        height: 320px;
+    }
+
+    article {
+        width: auto;
+    }
+
+    div {
+        flex-direction: column;
+        margin-top: -5px;
+    }
+
+    footer {
+        text-align: center;
+        flex-direction: column;
+        height: 450px;
+    }
+
+    #contacts {
+        margin-left: 1px;
+        border-bottom: 2px dotted #808080;
+        padding-bottom: 20px;
+    }
+
+    .trait {
+        border-bottom: 2px dotted #808080;
+        padding-bottom: 20px;
+    }
+}
